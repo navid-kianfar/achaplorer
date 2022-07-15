@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="stylesheets/normalize.scss">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+<div class="achaplorer aui-achaplorer aui-component">
+    <div class="administration">
+        <div class="app-info">
+            <i class="ap-icon-archive"></i>
+            <span>AchaPlorer</span>
+        </div>
+        <div class="actions">
+            <button>
+                <i class="ap-icon-settings"></i>
+                <span>Administrator</span>
+                <i class="ap-icon-chevron-down"></i>
+            </button>
+            <ul class="menu-items">
+                <li>
+                    <i class="ap-icon-equalizer3"></i>
+                    <span class="menu-item-title">User settings</span>
+                </li>
+                <li>
+                    <i class="ap-icon-cogs"></i>
+                    <span class="menu-item-title">Administration</span>
+                </li>
+                <li class="separator"></li>
+                <li>
+                    <i class="ap-icon-shield"></i>
+                    <span class="menu-item-title">logout</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="aui-ribbon aui-component">
+        <div class="tabs-container">
+            <div class="tabs-header">
+                <ul>
+                    <li data-tab="1" class="active">
+                        <a href="javascript:void(0)">
+                            <i class="ap-icon-hard-drive"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li data-tab="2">
+                        <a href="javascript:void(0)">
+                            <i class="ap-icon-columns"></i>
+                            <span>View</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tabs-content">
+                <!--                <div class="slide-handler left-slide-handler">-->
+                <!--                    <i class="fa fa-chevron-left"></i>-->
+                <!--                </div>-->
+                <!--                <div class="slide-handler right-slide-handler">-->
+                <!--                    <i class="fa fa-chevron-right"></i>-->
+                <!--                </div>-->
+                <div data-tab="1" class="tab-content active">
+                    <div class="section">
+                        <div class="section-content clipboard">
+                            <div class="button btn-copy">
+                                <button>
+                                    <i class="ap-icon-copy"></i>
+                                    <span>Copy</span>
+                                </button>
+                            </div>
+                            <div class="button btn-paste">
+                                <button>
+                                    <i class="ap-icon-clipboard"></i>
+                                    <span>Paste</span>
+                                </button>
+                            </div>
+                            <div class="button btn-cut">
+                                <button>
+                                    <i class="ap-icon-scissors"></i>
+                                    <span>Cut</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="section-label">Clipboard</div>
+                    </div>
+                    <div class="section">
+                        <div class="section-content organize">
+                            <div class="button btn-delete">
+                                <button>
+                                    <i class="ap-icon-trash"></i>
+                                    <span>Delete</span>
+                                </button>
+                            </div>
+                            <div class="button btn-rename">
+                                <button>
+                                    <i class="ap-icon-edit-3"></i>
+                                    <span>Rename</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="section-label">Organize</div>
+                    </div>
+                    <div class="section">
+                        <div class="section-content new">
+                            <div class="button btn-new-folder">
+                                <button>
+                                    <i class="ap-icon-folder-plus"></i>
+                                    <span>New Folder</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="section-label">New</div>
+                    </div>
+                    <div class="section">
+                        <div class="section-content transfer">
+                            <div class="button btn-download">
+                                <button>
+                                    <i class="ap-icon-download-cloud"></i>
+                                    <span>Download</span>
+                                </button>
+                            </div>
+                            <div class="button btn-upload">
+                                <button>
+                                    <i class="ap-icon-upload-cloud"></i>
+                                    <span>Upload</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="section-label">Transfer</div>
+                    </div>
+                    <div class="section">
+                        <div class="section-content open">
+                            <div class="button btn-open">
+                                <button>
+                                    <i class="ap-icon-external-link"></i>
+                                    <span>Open</span>
+                                </button>
+                            </div>
+                            <div class="button btn-preview">
+                                <button>
+                                    <i class="ap-icon-eye"></i>
+                                    <span>Preview</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="section-label">Open</div>
+                    </div>
+                    <div class="section">
+                        <div class="section-content compression">
+                            <div class="button btn-add-to-zip">
+                                <button>
+                                    <i class="ap-icon-file-zip"></i>
+                                    <span>Compress</span>
+                                </button>
+                            </div>
+                            <div class="button btn-extract">
+                                <button>
+                                    <i class="ap-icon-folder-open3"></i>
+                                    <span>Extract</span>
+                                    <span class="dropdown-caret ap-icon-chevron-down"></span>
+                                </button>
+                                <ul class="menu-items">
+                                    <li>
+                                        <div>
+                                            <i class="ap-icon-stack"></i>
+                                            <span class="menu-item-title">Extract all here...</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <i class="ap-icon-folder1"></i>
+                                            <span class="menu-item-title">Extract in separate folders</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="section-label">Compression</div>
+                    </div>
+                    <div class="section">
+                        <div class="section-content inline share">
+                            <div class="button btn-public-link">
+                                <button>
+                                    <i class="ap-icon-link"></i>
+                                    <span>Create public link</span>
+                                </button>
+                            </div>
+                            <div class="button btn-manage-public-link">
+                                <button>
+                                    <i class="ap-icon-link-2"></i>
+                                    <span>Manage public links</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="section-label">Share</div>
+                    </div>
+                    <div class="section">
+                        <div class="section-content inline select">
+                            <div class="button inline btn-select-all">
+                                <button class="vw-select-all-btn">
+                                    <i class="ap-icon-checkbox-checked"></i>
+                                    <span>Select all</span>
+                                </button>
+                            </div>
+                            <div class="button inline btn-select-none">
+                                <button class="vw-select-none-btn">
+                                    <i class="ap-icon-checkbox-unchecked2"></i>
+                                    <span>Select none</span>
+                                </button>
+                            </div>
+                            <div class="button inline btn-select-invert">
+                                <button class="vw-invert-selection-btn">
+
+                                    <i class="ap-icon-make-group"></i>
+                                    <span>Invert selection</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="section-label">Select</div>
+                    </div>
+                </div>
+                <div data-tab="2" class="tab-content">
+                    <div class="section">
+                        <div class="section-content panes">
+                            <div class="button toggle-button active btn-navigatio">
+                                <button>
+                                    <i class="ap-icon-layout"></i>
+                                    <span>Navigation pane</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="section-label">Panes</div>
+                    </div>
+                    <div class="section">
+                        <div class="section-content inline column">
+                            <div class="section-content-column">
+                                <div class="button toggle-button btn-ex-icon">
+                                    <button class="vw-x-large-btn">
+                                        <i class="ap-icon-square"></i>
+                                        <span>Extra large icons</span>
+                                    </button>
+                                </div>
+                                <div class="button toggle-button btn-m-icon">
+                                    <button class="vw-medium-btn">
+                                        <i class="ap-icon-grid6"></i>
+                                        <span>Medium icons</span>
+                                    </button>
+                                </div>
+                                <div class="button toggle-button btn-d-icon">
+                                    <button class="vw-details-btn">
+                                        <i class="ap-icon-list1"></i>
+                                        <span>Details icons</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="section-content-column">
+                                <div class="button toggle-button inline btn-l-icon">
+                                    <button class="vw-large-btn active">
+                                        <i class="ap-icon-stop2"></i>
+                                        <span>Large icons</span>
+                                    </button>
+                                </div>
+                                <div class="button toggle-button inline btn-s-icon">
+                                    <button class="vw-small-btn">
+                                        <i class="ap-icon-grid"></i>
+                                        <span>Small icons</span>
+                                    </button>
+                                </div>
+                                <div class="button toggle-button inline btn-t-icon">
+                                    <button class="vw-tiles-btn">
+                                        <i class="ap-icon-grid1"></i>
+                                        <span>Tiles</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-label">Layout</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="aui-navigation-bar aui-component ">
+        <div class="path-container ">
+            <div class="parent-button-container">
+                <a href="javascript:void(0)">
+                    <i class="ap-icon-hard-drive"></i>
+                </a>
+                <div class="show-sub-folders">
+                    <i class="ap-icon-chevron-right"></i>
+                </div>
+            </div>
+            <div class="path-inner-container slide">
+                <!--                <div class="slide-handler left-slide-handler">-->
+                <!--                    <i class="fa fa-chevron-left"></i>-->
+                <!--                </div>-->
+                <!--                <div class="slide-handler right-slide-handler">-->
+                <!--                    <i class="fa fa-chevron-right"></i>-->
+                <!--                </div>-->
+                <ul class="root-folders">
+                    <li class="root-folder open">
+                        <a href="javascript:void(0)">
+                            <i class="ap-icon-folder1"></i>
+                            <span>Folder Name</span>
+                        </a>
+                        <div class="show-sub-folders">
+                            <i class="ap-icon-chevron-right"></i>
+                            <!--                            <ul class="sub-folders" style="display: none;">-->
+                            <!--                                <li>-->
+                            <!--                                    <a href="javascript:void(0)">-->
+                            <!--                                        <i class="aui-icon aui-icon-folder"></i>-->
+                            <!--                                        <span>Folder Name</span>-->
+                            <!--                                    </a>-->
+                            <!--                                </li>-->
+                            <!--                                <li>-->
+                            <!--                                    <a href="javascript:void(0)">-->
+                            <!--                                        <i class="aui-icon aui-icon-folder"></i>-->
+                            <!--                                        <span>Folder Name</span>-->
+                            <!--                                    </a>-->
+                            <!--                                </li>-->
+                            <!--                                <li>-->
+                            <!--                                    <a href="javascript:void(0)">-->
+                            <!--                                        <i class="aui-icon aui-icon-folder"></i>-->
+                            <!--                                        <span>Folder Name</span>-->
+                            <!--                                    </a>-->
+                            <!--                                </li>-->
+                            <!--                                <li>-->
+                            <!--                                    <a href="javascript:void(0)">-->
+                            <!--                                        <i class="aui-icon aui-icon-folder"></i>-->
+                            <!--                                        <span>Folder Name</span>-->
+                            <!--                                    </a>-->
+                            <!--                                </li>-->
+                            <!--                            </ul>-->
+                        </div>
+                    </li>
+                    <li class="root-folder">
+                        <a href="javascript:void(0)">
+                            <i class="ap-icon-folder1"></i>
+                            <span>Folder Name</span>
+                        </a>
+                        <div class="show-sub-folders">
+                            <i class="ap-icon-chevron-right"></i>
+                        </div>
+                    </li>
+                    <li class="root-folder">
+                        <a href="javascript:void(0)">
+                            <i class="ap-icon-folder1"></i>
+                            <span>Folder Name</span>
+                        </a>
+                        <div class="show-sub-folders">
+                            <i class="ap-icon-chevron-right"></i>
+                        </div>
+                    </li>
+                    <li class="root-folder">
+                        <a href="javascript:void(0)">
+                            <i class="ap-icon-folder1"></i>
+                            <span>Folder Name</span>
+                        </a>
+                        <div class="show-sub-folders">
+                            <i class="ap-icon-chevron-right"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="refresh-button-container">
+                <button>
+                    <i class="ap-icon-refresh-ccw"></i>
+                </button>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="input-group ">
+                <input type="text" placeholder="Search....">
+                <div class="prefix">
+                    <button>
+                        <i class="ap-icon-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="aui-split-panel aui-component ">
+        <div class="panel folder-explorer-panel">
+            <div class="aui-tree aui-component">
+                <ul class="tree-root-container tree-container">
+                    <li class="tree-node expanded">
+                        <div class="active selected">
+                            <span class="child-info">
+                                <i class="ap-icon-chevron-down"></i>
+                            </span>
+                            <span class="node-info">
+                                <i class="ap-icon-folder1"></i>
+                                <span class="node-text">Folder Name</span>
+                            </span>
+                        </div>
+                        <ul class="tree-container">
+                            <li class="tree-node expanded">
+                                <div class="active">
+                                    <span class="child-info">
+                                        <i class="ap-icon-chevron-down"></i>
+                                    </span>
+                                    <span class="node-info">
+                                        <i class="ap-icon-folder1"></i>
+                                        <span class="node-text">Folder Name</span>
+                                    </span>
+                                </div>
+                                <ul class="tree-container">
+                                    <li class="tree-node expanded">
+                                        <div class="">
+                                            <span class="child-info">
+                                                <i class="ap-icon-chevron-right"></i>
+                                            </span>
+                                            <span class="node-info">
+                                                <i class="ap-icon-folder1"></i>
+                                                <span class="node-text">Folder Name</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="tree-node expanded">
+                                        <div class="">
+                                            <span class="child-info">
+                                                <i class="ap-icon-chevron-right"></i>
+                                            </span>
+                                            <span class="node-info">
+                                                <i class="ap-icon-folder1"></i>
+                                                <span class="node-text">Folder Name</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="tree-node expanded">
+                                        <div class="">
+                                            <span class="child-info">
+                                                <i class="ap-icon-chevron-right"></i>
+                                            </span>
+                                            <span class="node-info">
+                                                <i class="ap-icon-folder1"></i>
+                                                <span class="node-text">Folder Name</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="tree-node expanded">
+                                <div class="">
+                                    <span class="child-info">
+                                        <i class="ap-icon-chevron-right"></i>
+                                    </span>
+                                    <span class="node-info">
+                                        <i class="ap-icon-folder1"></i>
+                                        <span class="node-text">Folder Name</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="tree-node expanded">
+                                <div class="">
+                                    <span class="child-info">
+                                        <i class="ap-icon-chevron-right"></i>
+                                    </span>
+                                    <span class="node-info">
+                                        <i class="ap-icon-folder1"></i>
+                                        <span class="node-text">Folder Name</span>
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="tree-node expanded">
+                        <div class="active">
+                            <span class="child-info">
+                                <i class="ap-icon-chevron-down"></i>
+                            </span>
+                            <span class="node-info">
+                                <i class="ap-icon-folder1"></i>
+                                <span class="node-text">Folder Name</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="tree-node expanded">
+                        <div class="active">
+                            <span class="child-info">
+                                <i class="ap-icon-chevron-down"></i>
+                            </span>
+                            <span class="node-info">
+                                <i class="ap-icon-folder1"></i>
+                                <span class="node-text">Folder Name</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="tree-node expanded">
+                        <div class="active">
+                            <span class="child-info">
+                                <i class="ap-icon-chevron-down"></i>
+                            </span>
+                            <span class="node-info">
+                                <i class="ap-icon-folder1"></i>
+                                <span class="node-text">Folder Name</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="tree-node expanded">
+                        <div class="active">
+                            <span class="child-info">
+                                <i class="ap-icon-chevron-down"></i>
+                            </span>
+                            <span class="node-info">
+                                <i class="ap-icon-folder1"></i>
+                                <span class="node-text">Folder Name</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="tree-node expanded">
+                        <div class="active">
+                            <span class="child-info">
+                                <i class="ap-icon-chevron-down"></i>
+                            </span>
+                            <span class="node-info">
+                                <i class="ap-icon-folder1"></i>
+                                <span class="node-text">Folder Name</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="tree-node expanded">
+                        <div class="active">
+                            <span class="child-info">
+                                <i class="ap-icon-chevron-down"></i>
+                            </span>
+                            <span class="node-info">
+                                <i class="ap-icon-folder1"></i>
+                                <span class="node-text">Folder Name</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="tree-node expanded">
+                        <div class="active">
+                            <span class="child-info">
+                                <i class="ap-icon-chevron-down"></i>
+                            </span>
+                            <span class="node-info">
+                                <i class="ap-icon-folder1"></i>
+                                <span class="node-text">Folder Name</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="tree-node expanded">
+                        <div class="active">
+                            <span class="child-info">
+                                <i class="ap-icon-chevron-down"></i>
+                            </span>
+                            <span class="node-info">
+                                <i class="ap-icon-folder1"></i>
+                                <span class="node-text">Folder Name</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="tree-node expanded">
+                        <div class="active">
+                            <span class="child-info">
+                                <i class="ap-icon-chevron-down"></i>
+                            </span>
+                            <span class="node-info">
+                                <i class="ap-icon-folder1"></i>
+                                <span class="node-text">Folder Name</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel-handler">
+            <div class="panel-handler-button">
+                <button>
+                    <i class="ap-icon-chevron-left"></i>
+                </button>
+            </div>
+        </div>
+        <div class="panel file-explorer-panel">
+            <div class="aui-file-explorer-preview aui-component">
+                <div class="details-view">
+                    <div class="details name">
+                        <span class="details-text">Name</span>
+                        <div class="show-settings">
+                            <i class="ap-icon-chevron-down"></i>
+                            <ul class="details-menu">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <i class="ap-icon-sort-amount-asc"></i>
+                                        <span>Sort Ascending</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <i class="ap-icon-sort-amount-desc"></i>
+                                        <span>Sort Descending</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="details date-modified">
+                        <span class="details-text">Date modified</span>
+                        <div class="show-settings">
+                            <i class="ap-icon-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="details type">
+                        <span class="details-text">Type</span>
+                        <div class="show-settings">
+                            <i class="ap-icon-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="details size">
+                        <span class="details-text">Size</span>
+                        <div class="show-settings">
+                            <i class="ap-icon-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <ul class="explorer-container">
+                    <li class=" folder">
+                        <div class="details name folder-item">
+                            <i class="ap-icon-folder1"></i>
+                            <span>Folder Name</span>
+                        </div>
+                        <span class="details date-modified">1/11/2016 3:05PM</span>
+                        <span class="details type">File Folder</span>
+                        <span class="details size"></span>
+                    </li>
+                    <li class=" folder">
+                        <div class="details name folder-item">
+                            <i class="ap-icon-folder1"></i>
+                            <span>Folder Name</span>
+                        </div>
+                        <span class="details date-modified">1/11/2016 3:05PM</span>
+                        <span class="details type">File Folder</span>
+                        <span class="details size"></span>
+                    </li>
+                    <li class=" file">
+                        <div class="details name file-item">
+                            <i class="ap-icon-file-pdf"></i>
+                            <span>file name</span>
+                        </div>
+                        <span class="details date-modified">1/11/2016 3:05PM</span>
+                        <span class="details type">File</span>
+                        <span class="details size">2,997 KB</span>
+                    </li>
+                    <li class=" file">
+                        <div class="details name file-item">
+                            <i class="ap-icon-file-pdf"></i>
+                            <span>file name</span>
+                        </div>
+                        <span class="details date-modified">1/11/2016 3:05PM</span>
+                        <span class="details type">File</span>
+                        <span class="details size">2,997 KB</span>
+                    </li>
+                    <li class=" file">
+                        <div class="details name file-item">
+                            <i class="ap-icon-file-pdf"></i>
+                            <span>file name</span>
+                        </div>
+                        <span class="details date-modified">1/11/2016 3:05PM</span>
+                        <span class="details type">File</span>
+                        <span class="details size">2,997 KB</span>
+                    </li>
+                    <li class=" file">
+                        <div class="details name file-item">
+                            <i class="ap-icon-file-pdf"></i>
+                            <span>file name</span>
+                        </div>
+                        <span class="details date-modified">1/11/2016 3:05PM</span>
+                        <span class="details type">File</span>
+                        <span class="details size">2,997 KB</span>
+                    </li>
+                    <li class=" file">
+                        <div class="details name file-item">
+                            <i class="ap-icon-file-pdf"></i>
+                            <span>file name</span>
+                        </div>
+                        <span class="details date-modified">1/11/2016 3:05PM</span>
+                        <span class="details type">File</span>
+                        <span class="details size">2,997 KB</span>
+                    </li>
+                    <li class=" file">
+                        <div class="details name file-item">
+                            <i class="ap-icon-file-pdf"></i>
+                            <span>file name</span>
+                        </div>
+                        <span class="details date-modified">1/11/2016 3:05PM</span>
+                        <span class="details type">File</span>
+                        <span class="details size">2,997 KB</span>
+                    </li>
+                    <li class=" file">
+                        <div class="details name file-item">
+                            <i class="ap-icon-file-pdf"></i>
+                            <span>file name</span>
+                        </div>
+                        <span class="details date-modified">1/11/2016 3:05PM</span>
+                        <span class="details type">File</span>
+                        <span class="details size">2,997 KB</span>
+                    </li>
+                    <li class=" file">
+                        <div class="details name file-item">
+                            <i class="ap-icon-file-pdf"></i>
+                            <span>file name</span>
+                        </div>
+                        <span class="details date-modified">1/11/2016 3:05PM</span>
+                        <span class="details type">File</span>
+                        <span class="details size">2,997 KB</span>
+                    </li>
+                    <li class=" file">
+                        <div class="details name file-item">
+                            <i class="ap-icon-file-pdf"></i>
+                            <span>file name</span>
+                        </div>
+                        <span class="details date-modified">1/11/2016 3:05PM</span>
+                        <span class="details type">File</span>
+                        <span class="details size">2,997 KB</span>
+                    </li>
+                    <li class=" file">
+                        <div class="details name file-item">
+                            <i class="ap-icon-file-pdf"></i>
+                            <span>file name</span>
+                        </div>
+                        <span class="details date-modified">1/11/2016 3:05PM</span>
+                        <span class="details type">File</span>
+                        <span class="details size">2,997 KB</span>
+                    </li>
+                    <li class=" file">
+                        <div class="details name file-item">
+                            <i class="ap-icon-file-pdf"></i>
+                            <span>file name</span>
+                        </div>
+                        <span class="details date-modified">1/11/2016 3:05PM</span>
+                        <span class="details type">File</span>
+                        <span class="details size">2,997 KB</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="scripts/demo.js"></script>
+</body>
+</html>
